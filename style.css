@@ -1,0 +1,144 @@
+/* *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.container{
+    background-color: #E5E5FD;
+    min-height: 100vH;
+    border: 10px solid #1d1e4c
+}
+.content{
+    max-width:900px;
+    margin:0 auto
+    
+}
+.top-section{
+    margin-top:100px;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+
+}
+.top-section h1{
+    font-size: 50px;
+    font-weight:bold;
+    color:  #1d1e4c;
+    text-transform: uppercase;
+
+}
+.top-section  h4{
+    text-align: end;
+    font-size:30px;
+}
+
+.image{
+    border-radius: 50%;
+    overflow:hidden;
+}
+.image img{
+   
+    width:300px;
+    height:320px;
+}
+.about {
+    margin-top: 50px;
+}
+.about h2{
+    font-size: 70px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.about p{
+    font-size:20px;
+    line-height :30px;
+    letter-spacing: 1.2px;
+    text-align:justify;
+    
+}
+.biography h3{
+    font-size: 30px ;
+    margin-top: 50px;
+    margin-bottom:20px;
+    
+}
+.biography ul{
+    margin-left: 50px;
+}
+.biography li{
+    margin-bottom:15px;
+}
+footer{
+    margin: 50px 0;    
+}
+footer p{
+    text-align: end;
+} 
+
+*/
+
+/* job */
+
+.form_container{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+.form_control{
+    display:flex;
+    flex-direction: column;
+}
+
+label{
+    font-size:15px;
+    margin-bottom: 5px;
+}
+input,select,textarea{
+    padding: 6px 10px;
+    border:1px solid grey;
+    border-radius: 4px;
+    font-size: 15px;
+}
+input:focus{
+    outline-color: red;
+}
+textarea:focus{
+    outline-color:red ;
+}
+select{
+    outline-color: red;
+}
+.button_container{
+    display:flex;
+    justify-content:flex-end;
+    margin-top: 20px;
+}
+button{
+    background-color:blue;
+    border:transparent solid 2px;
+    padding:5px 10px;
+    color:white;
+    border-radius:8px; 
+    transition:0.3s ease-in;
+}
+button:hover{
+    background-color: #ccc;
+    border:2px solid blue;
+    color:black;
+    transition:0.3s ease-out;
+    cursor:pointer;
+
+}
+.text_control{
+    grid-column: 1/span 2;
+}
+.text_control textarea{
+       width:100%;
+}
+@media (max-width:460px){
+    .text_control{
+        grid-column: 1/span 1;
+    }   
+}
